@@ -1,0 +1,11 @@
+{
+    "name": "ksd/member",
+    "type": "library",
+    "authors": [
+        {
+            "name": "kevin",
+            "email": "kevin.kao@touchcity.tw"
+        }
+    ],
+    "require": {}
+}
