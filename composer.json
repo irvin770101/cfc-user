@@ -1,10 +1,10 @@
 {
-    "name": "ksd/member",
+    "name": "cfc/irvin",
     "type": "library",
     "authors": [
         {
-            "name": "kevin",
-            "email": "kevin.kao@touchcity.tw"
+            "name": "irvin",
+            "email": "chuang.f.c@gmail.com"
         }
     ],
     "require": {}
