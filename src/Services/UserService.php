@@ -31,24 +31,24 @@ class UserService
         
     }
     
-//
-//    /**
-//    * 驗證成員是否合法
-//    * @param string $account
-//    * @param string $password
-//    * @return mixed
-//    */
-//    public function verify($account, $password, $returnUser = false)
-//    {
-//        $user = $this->userRepo->findByAccount($account);
-//        if (is_null($user)) {
-//            return false;
-//        } else if (Hash::check($password, $user->password)) {
-//            return $returnUser === true ? $user : true;
-//        } else {
-//            return false;
-//        }
-//    }
+
+    /**
+    * 驗證成員是否合法
+    * @param string $account
+    * @param string $password
+    * @return mixed
+    */
+    public function verify($account, $password, $returnUser = false)
+    {
+        $user = $this->userRepo->findByAccount($account);
+        if (is_null($user)) {
+            return false;
+        } else if (Hash::check($password, $user->password)) {
+            return $returnUser === true ? $user : true;
+        } else {
+            return false;
+        }
+    }
 //
 //    /**
 //    * 更新成員資訊

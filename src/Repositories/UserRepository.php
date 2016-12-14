@@ -21,6 +21,19 @@ class UserRepository
     public function add($data){
         return $this->model->insertGetId($data);
     }
+    
+    /**
+    * 使用帳戶名稱查找成員
+    * @param string $account
+    */
+    public function findByAccount($account)
+    {
+        return $this->model
+                    ->where('account', $account)
+                    ->get()
+                    ->first();
+    }
+    
 //
 //    /**
 //    * 使用id查找成員
@@ -31,17 +44,6 @@ class UserRepository
 //        return $this->model->find($id);
 //    }
 //
-//    /**
-//    * 使用帳戶名稱查找成員
-//    * @param string $account
-//    */
-//    public function findByAccount($account)
-//    {
-//        return $this->model
-//                    ->where('account', $account)
-//                    ->get()
-//                    ->first();
-//    }
 //
 //    /**
 //    * 更新成員資訊
