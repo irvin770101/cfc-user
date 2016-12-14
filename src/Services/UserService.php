@@ -27,7 +27,7 @@ class UserService
             'password' => Hash::make('123456'),
             'email' => 'chuang.f.c@gmail.com',
         ];
-        return $this->userRepo->insertGetId($user_data);
+        return $this->userRepo->add($user_data);
         
     }
     
